@@ -1,0 +1,45 @@
+/* grid é usado para dividir a página em regiões principais ou definir o relacionamento em termos, medidas, posição e camadas entre os componentes*/
+
+.grid{
+    display: grid;
+}
+
+
+/* .Grid-Template-columns configura a largura das colunas do grid
+você deve colocar os valores desejados separados por espaços */
+.Grid-Template-columns-1{
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.Grid-Template-columns-2{
+    grid-template-columns: 1fr 2fr; /*duas colunas criadas, sendo a segunda com o dobro do tamanho da prmera. é uma unidade fracional. o tamanho do conteúdo é respeitado, ou seja, se o conteúdo na primeira coluna for maior que o da segunda, a primeira será maior*/
+}
+
+.Grid-Template-columns-3{
+    grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* estilos gerais */
+
+.item{
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.grid{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
